@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Andhika Dwi Iswanto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+.about-mf .about-img {
+  margin-bottom: 1rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 8;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Andhika Dwi Iswanto</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#project-certif" class="nav-link"><span>Certificates</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero" style="background-color: #2B2B2B;">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third img mt-3 pt-3" style="background-image:url(images/profile.jpg); border-radius:8%;  background-size: cover; width: 450px; height: 500px; background-position: center; margin-left: 450px; margin-bottom: 130px;">		   
+	          	 <div class="overlay"></div>
+	          	</div>	
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Andhika</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student   ',
+						'UI/UX  ',
+						'Engineering  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h4>KandakuCorp</h4>
+						<div class="row"></div>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.instagram.com/andhika.ez/" class="btn btn-primary py-3 px-4">Instagram</a> 
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My Project</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb p-4" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/profile_2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info mt-3">
+										<p><span class="title-s">Name: </span> <span>Andhika Dwi Iswanto</span></p>
+										<p><span class="title-s">Job Role: </span> <span>User Interface & User Experience</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Years 6 Months</span></p>
+										<p><span class="title-s">Hobby: </span> <span>Hiking & Traveling</span></p>
+										<p><span class="title-s">Address: </span> <span>Makassar, Indonesia</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Figma</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Design System Creation</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Wireframing & Prototyping</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Visual Design </span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Usability Testing</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>User Research </span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 3 years of experience in UI/UX design, accompanied by a bachelor's degree in Computer Engineering. Proficient in user interface design, user experience, user research, prototyping, and interaction design. Demonstrated success in leading impactful design projects and providing effective mentorship.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>UI/UX &amp; Engineering</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Universitas Negeri Makassar</span></li>
+									<li class="d-flex"><span>Language:</span> <span>Indonesia, English</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Design Sistem, Usability Testing, Wireframing & Prototyping, User Research & Analysis</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Hiking</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/andhikadwiiswanto/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior UI/UX Designer with 5+ years of experience crafting user-centered designs that drive business success. Proven expertise in user research, interaction design, usability testing, prototyping, and design systems, with a strong track record of leading impactful projects from concept to delivery.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>UI/UX Designer</h2>
+						<span class="position">Vix-Studio</span>
+						<p class="mt-4">Vix-Studio is a graphic design company specializing in creating innovative solutions for user experience (UX) and user interface (UI) design. 
+							<ul>
+								<li>Redesigned the application interface based on user research, delivering a modern and intuitive design that improved navigation efficiency by 30% as measured through usability testing.</li>
+								<li>Collaborated with cross-functional teams to align designs with business objectives and technical requirements, resulting in increased user satisfaction.</li>
+								<li>Optimized visual elements to maintain consistency with the company’s branding, enhancing the professional appeal and overall user perception of the application.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-Present</span>
+						<h2>UI/UX Designer</h2>
+						<span class="position">Dangke</span>
+						<p class="mt-4">
+							Dangke is a digital platform used by the Enrekang government for employee attendance and performance management, aiming to streamline processes and improve efficiency.
+							<ul>
+								<li>Redesigned the platform's interface based on user research and feedback, resulting in a more intuitive and visually appealing design.</li>
+								<li>Collaborated closely with developers and government stakeholders to ensure the design met technical requirements and business goals.</li>
+								<li>Ensured visual consistency by adhering to the platform’s branding guidelines, enhancing the professional appearance of the system and building trust among users.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2022</span>
+    					<h2>Senior High School</h2>
+    					<span class="position">SMA NEGERI 11 MAKASSAR</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-Present</span>
+    					<h2>Computer Engineering</h2>
+    					<span class="position">UNIVERSITAS NEGERI MAKASSAR</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-4">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1b6n0ROiEEmrby4Hyg9eGC6aUdK_YQYEY/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+   
+
+    <section class="ftco-section mt-5" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Here Are Some Examples of UI/UX Design and Redesign Projects.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://vix-studio.com/" class="block-20 zoom-effect" style="background-image: url('images/VIX.png'); border-radius: 8px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://vix-studio.com/">Vix-Studio Design and User Experience Analysis</a></h3>
+                <p>Analyzed user experience and design elements for Vix-Studio's platform, utilizing advanced design tools and methodologies to identify pain points and optimize user interactions, resulting in a more efficient and visually appealing interface.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://dangke.maspul.com/login" class="block-20 zoom-effect" style="background-image: url('images/DANGKE.png'); border-radius: 8px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://dangke.maspul.com/login">
+					Dangke Digital Platform Analysis</a></h3>
+                <p>Analyzed the performance and usability of the Dangke platform, utilizing data-driven insights to identify areas for improvement in user experience and operational efficiency, enhancing the platform's effectiveness for employee attendance and performance management.
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.figma.com/proto/SZlcKdq8IQfL2loKeLcPJt/Travel?page-id=0%3A1&node-id=535-11240&p=f&viewport=0%2C48%2C1&t=EzMob2BRWjfGsAjb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1155%3A22804&show-proto-sidebar=1" class="block-20 zoom-effect" style="background-image: url('images/Mockup\ 3.png'); border-radius: 8px;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.figma.com/proto/SZlcKdq8IQfL2loKeLcPJt/Travel?page-id=0%3A1&node-id=535-11240&p=f&viewport=0%2C48%2C1&t=EzMob2BRWjfGsAjb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1155%3A22804&show-proto-sidebar=1">Tripy Travel Application</a></h3>
+                <p>Conducted a thorough UI/UX design analysis for the Tripy travel application, utilizing user feedback and data insights to identify design opportunities. Enhanced the interface for a more intuitive user experience, improving navigation and overall engagement in the travel booking process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+
+    </section>
+
+	<section class="ftco-section-certif" id="project-certif">
+		<div class="container">
+		  <div class="row justify-content-center mb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certificates</h1>
+			  <h2 class="mb-4">Certificates</h2>
+			  <p>Here Are Some Examples of UI/UX Design Certificates.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.credly.com/badges/48034235-f84c-44db-9e3a-6453fd0cac73/linked_in_profile" class="block-20 zoom-effect" style="background-image: url('images/Adobe.png'); border-radius: 8px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.credly.com/badges/48034235-f84c-44db-9e3a-6453fd0cac73/linked_in_profile">Adobe Certified Professional in Graphic Design & Illustration Using Adobe Illustrator</a></h3>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.credly.com/badges/79640e36-317d-4495-8506-d34fadf1562e/linked_in_profile" class="block-20 zoom-effect" style="background-image: url('images/Intuit.png'); border-radius: 8px;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.credly.com/badges/79640e36-317d-4495-8506-d34fadf1562e/linked_in_profile">
+					Certified Intuit Design for Delight Innovator</a></h3>
+				  </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://drive.google.com/file/d/1vBZeq3BIe5XaYhTNnEHEKH10beLnbYDx/view?usp=sharing" class="block-20 zoom-effect w-100" style="background-image: url('images/CKM.png'); border-radius: 8px; width: 100%;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://drive.google.com/file/d/1vBZeq3BIe5XaYhTNnEHEKH10beLnbYDx/view?usp=sharing">Certified Kampus Merdeka SIB (MyEduSolve)</a></h3>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+  
+	  </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="13">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="2">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/Sunset\ -\ Copy.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Linkedin  </span> </h2>
+						<div class="heading"> <h4> I enjoy designing websites &amp; mobile apps </h4>
+						<br>
+						<p><a href="https://www.linkedin.com/in/andhikadwiiswanto/" class="btn btn-primary py-3 px-5">Linkedin</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Makassar, Indonesia</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="https://api.whatsapp.com/send/?phone=6285757274763&text&type=phone_number&app_absent=0">+62 857 5727 4763</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+				  <p><a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=andhikadwiiswanto@gmail.com">Andhikadwiiswanto@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download CV</h3>
+	            <p><a href="https://drive.google.com/file/d/1b6n0ROiEEmrby4Hyg9eGC6aUdK_YQYEY/view?usp=drive_link">CV</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/npVvJtw1acMQ386Y9" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.instagram.com/andhika.ez/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/andhikadwiiswanto/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://api.whatsapp.com/send/?phone=6285757274763&text&type=phone_number&app_absent=0"><span class="icon-phone2 "></span></a></li>
+					  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
